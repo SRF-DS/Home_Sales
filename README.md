@@ -1,32 +1,19 @@
-# Home Sales Analysis with PySpark
+# Home Sales with PySpark
 
-## Overview
-PySpark-based data analysis of home sales dataset using SparkSQL for efficient big data processing.
+## Problem
+Housing sales files get big fast — you need SparkSQL patterns (views, cache, parquet, partitions) that stay fast as data grows.
 
-## Key Features
-- Read CSV from remote URL
-- Perform complex aggregations on home sales data
-- Compare query performance across different data storage methods
-- Demonstrate caching and partitioning techniques
+## What we built
+A PySpark analysis of home sales that loads CSV (including remote via SparkFiles), runs aggregations, and compares query performance across caching and storage strategies.
 
-## Technical Decisions
-- Used SparkFiles for robust remote file loading
-- Implemented runtime tracking to compare query performance
-- Utilized parquet formatting for optimized storage
+## How to run
+```bash
+pip install pyspark findspark
+# open and run the Home Sales notebook in this repo
+```
 
-## Performance Techniques Demonstrated
-- Temporary view creation
-- Table caching
-- Data partitioning
-- Runtime comparison
+## Stack
+Python · PySpark · SparkSQL · Parquet
 
-## Requirements
-- PySpark
-- findspark
-- Python 3.12
-
-## Quick Start
-1. Ensure PySpark is installed
-2. Run notebook
-3. Observe query results and performance metrics
- 
+## Fun closer
+Caching feels like cheating until you time the same query twice and smile.
